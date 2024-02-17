@@ -40,10 +40,8 @@ def is_not_safe(jimmy):
 
 def tail_collide(snake):
     head=snake.turtles[0]
-    x_cor=head.xcor()
-    y_cor=head.ycor()
     for x in range(1,len(snake.turtles)-1):
-        if snake.turtles[x].xcor()==x_cor and y_cor==snake.turtles[x].ycor():
+        if snake.turtles[x].distance(head)<10:
             return True
 
     return False
