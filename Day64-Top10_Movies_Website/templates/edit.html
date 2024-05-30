@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% from 'bootstrap4/form.html' import render_form %}
+{% block title %}Edit Movies{% endblock %}
+
+{% block content %}
+<h1 class="heading">My Top 10 Movies</h1>
+<div class="content">
+  {{ render_form(form) }}
+  </div>
+{% endblock %}
